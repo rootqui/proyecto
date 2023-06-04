@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Teología</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header id = "header">
-        <h1>UAO</h1>
-        <nav>
+    <header class="header">
+        <div class="logo-org">
+            <img src="./img/logo.png" alt="UAO" class="logo">
+            <h1 id="name-org">UAO</h1>
+        </div>
+        <nav class="login">
             <a href="#">Iniciar Sesion</a>
             <a href="#">Registrarse</a>
         </nav>
@@ -20,7 +25,16 @@
             <button>Registrarse</button>
         </div>
     </div>
-    <footer id = "footer">
+    <div class="slideshow">
+        <div class="container-cards">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <a class="prev" onclick="">&#10094;</a>
+        <a class="next" onclick="">&#10095;</a>
+    </div>
+    <footer class="footer">
         <a href="#">Acerca de nosostros</a>
         <a href="#">Mision</a>
         <a href="#">Vision</a>

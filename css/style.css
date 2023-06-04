@@ -1,0 +1,100 @@
+body, html {
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* logo */
+.logo{
+    height: 60px;
+    width: 60px;
+}
+
+.logo-org{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    padding: 20px;
+}
+
+/* header */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#name-org{
+    font-size: 50px;
+}
+
+.login{
+    height: fit-content;
+    width: fit-content;
+}
+
+
+/*Hero image*/
+.hero-image{
+    background-image: url("../img/hero.jpg");
+
+    height: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text{
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:  #f2f3f4;
+}
+
+/* cards events */
+.card{
+    margin: 20px;
+    padding: 20px;
+    height: 200px;
+    width: 200%;
+    background-color: gray;
+}
+
+/* Next and previous buttons */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.container-cards{
+    display: flex;
+
+}
+
+.footer{
+    padding: 50px;
+}
