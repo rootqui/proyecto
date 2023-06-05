@@ -16,7 +16,7 @@ html{
 body{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows:100px 800px 50px;
+    grid-template-rows:90px 800px 300px 300px 10px;
     grid-template-areas: 
     "header     header"
     "hero-image hero-image"
@@ -59,18 +59,17 @@ a{
 }
 
 .info > a{
-    margin: 50px;
+    margin: 30px;
 }
 
 /*Hero image*/
 .hero-image{
     background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)) ,url("../img/hero.jpg");
-    /* background-image: url("../img/hero.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: hero-image;
-    /* margin: 0px; */
+
 }
 
 .hero-text{
@@ -83,24 +82,70 @@ a{
     color:  #f2f3f4;
 }
 
+
+.mision, .vision{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+
+.container-mision, .container-vision{
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+}
+
+.container-mision > p, .container-vision > p{
+    margin: 5px;
+    padding: 10px;
+}
+
+.img-mision{
+    /* position: relative; */
+    /* top: 40px; */
+    /* margin: 20px; */
+    background-image: url("../img/mision.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 700px;
+}
+
+
+.img-vision{
+
+    background-image: url("../img/vision.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 700px;
+}
+
+
 .mision{
-    grid-area: mision
+    grid-area: mision;    
+    padding: 50px;
 }
 
 .vision{
-    grid-area: vision
+    grid-area: vision;
+    padding: 50px;
 }
 
 
 .footer{
+    margin: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: auto;
-    /* padding: 10px; */
+    padding: 5px;
     grid-area: footer;
 }
 
 .footer > * {
-    margin: 20px;
+    padding: 20px;
 }
