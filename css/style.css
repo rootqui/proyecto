@@ -11,7 +11,10 @@ html{
     display: none;
 }
 
-
+body > * {
+    font-family: 'Open Sans', sans-serif;
+    color:  #f2f3f4;
+}
 
 body{
     display: grid;
@@ -23,17 +26,21 @@ body{
     "mision     mision"
     "vision     vision"
     "footer     footer";
+
+    background-color:   #505050;
 }
 
 
-a{
+a, a:visited{
     text-decoration: none;
+    color: #f2f3f4;
 }
 
 /* logo */
 .logo{
     height: 60px;
     width: 60px;
+    filter: brightness(0) invert(1)
 }
 
 /* logo and organization name */
@@ -64,6 +71,7 @@ a{
 
 /*Hero image*/
 .hero-image{
+    /* background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)) ,url("../img/hero.jpg"); */
     background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)) ,url("../img/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -79,9 +87,25 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color:  #f2f3f4;
+    
 }
 
+.hero-text > *{
+    margin: 20px;
+}
+
+.hero-text > p {
+    font-size: 50px;
+}
+
+.btn-singup{
+    display: block;
+    background-color: #505050;
+    width: 50px;
+    height: 20px;
+    margin: 50px;
+    padding: 50px;
+}
 
 .mision, .vision{
     display: flex;
@@ -93,7 +117,7 @@ a{
 .container-mision, .container-vision{
     margin: 10px;
     padding: 20px;
-    width: 200px;
+    width: 500px;
 }
 
 .container-mision > p, .container-vision > p{
@@ -101,27 +125,32 @@ a{
     padding: 10px;
 }
 
+.container-mision > p:first-child{
+    font-size: 50px;
+}
+
+.container-vision > p:first-child{
+    font-size: 50px;
+}
 .img-mision{
-    /* position: relative; */
-    /* top: 40px; */
-    /* margin: 20px; */
     background-image: url("../img/mision.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
     width: 700px;
+    border-radius: 20px;
 }
 
 
 .img-vision{
-
     background-image: url("../img/vision.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
     width: 700px;
+    border-radius: 20px;
 }
 
 
