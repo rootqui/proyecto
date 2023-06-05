@@ -21,8 +21,8 @@
         <nav class="info">
             <a href="#section-mision">Misi&oacuten</a>
             <a href="#section-vision">Visi&oacuten</a>
-            <a href="#">Iniciar Sesi&oacuten</a>
-            <a href="#">Registrarse</a>
+            <div onclick="loginToggle()">Iniciar Sesi&oacuten</div>
+            <div onclick="signupToggle()">Registrarse</li>
         </nav>
     </header>
 
@@ -60,5 +60,42 @@
             <a href="#">Contactanos</a>
         </div>
     </footer>
+
+    <!-- form signup -->
+    <div class="signup-form">
+        <div class="form">
+            <div class="close" onclick="signupToggle()">&times;</div>
+            <div class="text">
+                <h1>Register Form</h1>
+            </div>
+            <form action="#">
+                <div class="row">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <input type="email" placeholder="Email ID">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    
+    <!-- form login -->
+    <div class="login-form">
+        <div class="form">
+            <div class="close" onclick="loginToggle()">&times;</div>
+            <div class="text">
+                <h1>Login Form</h1>
+            </div>
+            <form action="#">
+                <input type="email" placeholder="Email ID">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
