@@ -1,5 +1,5 @@
 # PROYECTO DE TEOLOGíA
-Es un sitio web donde recopilamos las actividades de ayuda social. 
+Es un sitio web donde sobre actividades de voluntariado. 
 
 # Autores
 <ul>
