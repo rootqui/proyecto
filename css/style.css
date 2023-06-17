@@ -252,3 +252,32 @@ a, a:visited{
     transition: .5s;
     pointer-events: none;
 }
+
+
+.box-search input{
+    padding: 10px;
+    height: 15px;
+    width: 390px;
+    border: none;
+    border-radius: 50px;
+}
+
+.box-search button{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f8f2f2;
+    /* background-color: #1d1c1c; */
+}
+
+.btn-search{
+    color: #131314fb;   
+    
+}
+
+.box-search{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}

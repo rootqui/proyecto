@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasea Arequipa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="logo-org">
+            <img src="../img/logo.png" alt="logo-pasea" class="logo">
+            <h1 id="name-org">PASEA</h1>
+        </div>
+        <nav class="info">
+            <a href="#section-mision">Misi&oacuten</a>
+            <a href="#section-vision">Visi&oacuten</a>
+            <div onclick="loginToggle()">Iniciar Sesi&oacuten</div>
+            <div onclick="signupToggle()">Registrarse</li>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div>Voluntariado</div>
+    </div>
     
+    <div class="box-filter" id="box-filter">
+
+        <select name="distrito" id="distrito">
+            <option option selected> </option>
+            <option value="altoselvaalegre" >Alto Selva Alegre</option>
+            <option value="cayma">Cayma</option>
+            <option value="cerrocolorado">Cerro Colorado</option>
+            <option value="characato">Characato</option>
+            <option value="jacobohunter">Jacobo Hunter</option>
+            <option value="joseluisbustamanteyrivero">José Luis Bustamante y Rivero</option>
+            <option value="marianomelgar">Mariano Melgar</option>
+            <option value="miraflores">Miraflores</option>
+            <option value="paucarpata">Paucarpata</option>
+            <option value="sachaca">Sachaca</option>
+            <option value="socabaya">Socabaya</option>
+            <option value="tiabaya">Tiabaya</option>
+            <option value="socabaya">Socabaya</option>
+            <option value="yanahuara">Yanahuara</option>
+            <option value="yura">yura</option>
+        </select>
+        
+        <select name="tipo" id="tipo">
+            <option option selected> </option>
+            <option value="ninos" >Niños</option>
+            <option value="adolescentes">Adolescentes</option>
+            <option value="adultomayor" >Adulto Mayor</option>
+        </select>
+        
+    </div>
+
+
+    <div class="box-search" id="box-search">
+        <input type="text" id="text-search">
+        <button class="btn-search" id="search">
+            <i class="fas fa-search" id="icon-search"></i>
+        </button>
+    </div>
+
+    <template id="card-template">
+        <article class="card-program">
+            <img>
+            <h3 id="title-program"></h3>
+            <div id="desc-program"></div>
+            <div id="cupos"></div>
+            <button class="btn-search" id="search">
+                Unirme    
+            </button>
+        </article>
+    </template>
 </body>
 </html>
