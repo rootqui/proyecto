@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasea Arequipa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-org">
+            <img src="../img/logo.png" alt="logo-pasea" class="logo">
+            <h1 id="name-org">PASEA</h1>
+        </div>
+
+        <nav class="info">       
+            <div id="perfil">Perfil</div>
+            <div id="programas">Programas</div>
+            <div id="certificiones">Certificaciones</div>
+            <div >Nombre organización</div>
+        </nav>
+    </header>
+    
+    <!-- al iniciar ya se tiene programas activos -->
+    
+    <!-- formulario para agregar nuevos programas -->
+    <div class="signup-form">
+        <div class="form">
+            <div class="close" onclick="signupToggle()">&times;</div>
+            <div class="text">
+                <h2>Agregar Nuevo Programa</h2>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Nombre Programa">
+                <input type="text" placeholder="Descripcion">
+                <input type="number" placeholder="Cupos">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    
+    <!-- formulario de gestion de voluntarios -->
+    <div class="container-gestion-voluntarios">
+        <table>
+            <thead>
+                <td>Nombre</td>
+                <td>Telefono</td>
+                <td>Programa</td>
+                <td>Horas Voluntariado</td>
+                <td>Acciones</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AAAA</td>
+                    <td>BBBB</td>
+                    <td>CCCC</td>
+                    <td>1000</td>
+                    <td>
+                        <button>Ver Perfil</button>
+                        <button>Calificar</button>
+                        <button>Rechazar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>
