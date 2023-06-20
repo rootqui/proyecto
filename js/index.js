@@ -1,14 +1,87 @@
 
-function signupToggle(){
-    let container = document.querySelector('.info');
-    container.classList.toggle('active');
-    let popup = document.querySelector('.signup-form');
-    popup.classList.toggle('active');
-}
+const   d = document,
+    tab = d.querySelector(".tab-form"),
+    tabLogin = d.querySelector(".tab-form-login"),
+    registroForm = d.querySelector(".registro-form"),
+    tabHeader = d.querySelector(".tab-header"),
+    tabHeaderElements = d.querySelectorAll(".tab-header > div"),
+    tabBodyElements = d.querySelectorAll(".tab-body > div"),
+    frmRegistro = d.getElementById("frm-registro"),
+    frmInicioSesion = d.getElementById("frm-inicio-sesion"),
+    btnRegistro = d.getElementById("tab-btn-registro"),
+    frmLogin= d.getElementById("form-login"),
+    frmUsuario = d.getElementById("form-usuario"),
+    frmOrg = d.getElementById("form-org"),
+    tabUsuario = d.getElementById("tab-usuario"),
+    tabOrg = d.getElementById("tab-org"),
+    btnCloseReg = d.getElementById("btn-close-reg"),
+    btnCloseLogin = d.getElementById("btn-close-login"),
+    btnLogin = d.getElementById("tab-btn-login");
+    
 
-function loginToggle(){
-    let container = document.querySelector('.info');
-    container.classList.toggle('active');
-    let popup = document.querySelector('.login-form');
-    popup.classList.toggle('active');
-}
+btnCloseLogin.addEventListener("click", (e)=>{
+    if(e.target.matches("#btn-close-login")){
+        tabLogin.style.opacity = 0;
+        tabLogin.style.visiblity = "hidden";
+        // e.preventDefault();
+    }
+});
+    
+btnCloseReg.addEventListener("click", (e)=>{
+    if(e.target.matches("#btn-close-reg")){
+        tab.style.opacity = 0;
+        frmRegistro.style.visiblity = "hidden";
+        tab.style.zIndex = -1000;
+        // e.preventDefault();
+    }
+});
+
+
+
+btnLogin.addEventListener("click",function(e){
+        if(e.target.matches("#tab-btn-login")){
+            tabLogin.style.opacity = 1;
+            frmInicioSesion.style.visiblity = "visible";
+            frmLogin.style.zIndex = 1000;
+            frmInicioSesion.style.zIndex = 1000;
+            frmInicioSesion.innerHTML = frmLogin.innerHTML;
+            e.preventDefault();
+        }
+});
+
+// Boton de Registro
+btnRegistro.addEventListener("click",function(e){
+    if(e.target.matches("#tab-btn-registro")){           
+        tab.style.opacity = 1;
+        frmRegistro.style.visiblity = "visible";
+        tab.style.zIndex = 1000;
+        frmRegistro.innerHTML = frmUsuario.innerHTML;
+        e.preventDefault();
+    }
+});
+
+// Pestaña de Usuario
+tabUsuario.addEventListener("click",function(e){
+        if(e.target.matches("#tab-usuario")){
+            tabBodyElements[0].innerHTML = "";
+            tabBodyElements[0].innerHTML = frmUsuario.innerHTML;            
+            tab.style.opacity = 1;
+            tabHeaderElements[1].classList.remove("active");
+            tabHeaderElements[0].classList.add("active");
+            
+        }
+});
+
+// Pestaña de Organizacion
+tabOrg.addEventListener("click",function(e){
+    if(e.target.matches("#tab-org")){
+        tabBodyElements[0].innerHTML = "";
+        tabBodyElements[0].innerHTML = frmOrg.innerHTML;
+        tab.style.opacity = 1;
+        tabHeaderElements[0].classList.remove("active");
+        tabHeaderElements[1].classList.add("active");
+    }
+});
+
+
+

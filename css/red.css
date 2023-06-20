@@ -1,0 +1,287 @@
+body, html {
+    height: 90%;
+    background-color:   #505050;
+}
+
+html{
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+body > * {
+    font-family: 'Open Sans', sans-serif;
+    color:  #f2f3f4;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: #f2f3f4;
+}
+
+/* logo */
+.logo{
+    height: 60px;
+    width: 60px;
+    filter: brightness(0) invert(1)
+}
+
+/* logo and organization name */
+.logo-org{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+
+}
+
+/* header */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* grid-area: header; */
+}
+
+#name-org{
+    font-size: 50px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.info a, .info div{
+    margin: 20px;
+}
+
+
+
+.footer{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 5px;
+    /* grid-area: footer; */
+}
+
+.footer > * {
+    padding: 20px;
+}
+
+/* form */
+
+
+.tab-form,
+.tab-form-login{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 450px;
+    background: #131313;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.08);
+}
+.tab-body{
+    margin: 0px 4px 10px 30px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-input > input {
+    height: 30px;
+    width: 90%;
+    margin: 7px 0px 0px 0px;
+}
+
+
+.form-input > button {
+    align-self: center;
+    height: 40px;
+    width: 100px;
+    margin: 7px 0px 0px 0px;
+}
+
+/* .registro-form{ */
+.tab-form,
+.tab-form-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    /* visibility: hidden; */
+}
+
+.tab-header,
+.tab-header-login{
+    margin: 0px 4px 0px 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-body{
+    margin-left: 20px;
+}
+
+.tab-header>div{
+    padding: 0px 10px 0px 10px;
+}
+
+.tab-form .tab-header > div.active{
+    border: 1px solid #4a9ff3;
+}
+
+.tab-form .tab-body > div
+{
+    opacity: 0;
+    /* visibility: hidden; */
+    transition: opacity 300ms ease-in-out 0ms;
+}
+
+
+.tab-body  div.active{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease-in-out 0ms;
+}
+
+.signup-form-display{
+    top: 50%;
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.tab-form .tab-header{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+
+.tab-form .tab-header > div{
+    flex:1;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab-form .tab-header > div.active{
+    border: 1px solid #4a9ff3;
+}
+
+.form-input-org{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-template-areas: 
+    "nomb-org   razon-org"
+    "ruc-org    ruc-org"
+    "desc-org   desc-org"
+    "ncontacto-org     dnicontacto-org"
+    "mail-org     telf-org"
+    "contra-org     ccontra-org"
+
+    ;
+}
+
+.form-input-org > div{
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-org > div {
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-org > div > input {
+    margin: 10px 0px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nomb-org{
+    grid-area: nomb-org;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.razon-org{
+    grid-area: razon-org;
+}
+
+
+.ruc-org{
+    grid-area: ruc-org;
+}
+
+.desc-org{
+    grid-area: desc-org;
+}
+
+.ncontacto-org{
+    grid-area: ncontacto-org;
+}
+
+.dnicontacto-org{
+    grid-area: dnicontacto-org;
+}
+
+.mail-org{
+    grid-area: mail-org;
+}
+
+.telf-org{
+    grid-area: telf-org;
+}
+.contra-org{
+    grid-area: contra-org;
+}
+
+.ccontra-org{
+    grid-area: ccontra-org;
+}
+
+
+.btn-close{
+    align-self: flex-end;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+/* Cards organizaciones */
+.organizacion-card{
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.organizacion-titulo{
+    font-size: 24px;
+}
+
+.organizacion-titulo,
+.organizacion-info{
+    margin: 3px;
+    padding: 3px;
+}
