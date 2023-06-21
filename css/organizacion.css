@@ -70,7 +70,7 @@ form input{
 table{
     width: 700px;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: -9px;
 }
 
 td {
@@ -78,5 +78,15 @@ td {
 }
 
 button{
-    padding: 4px;
+
+    margin: 4px;
+}
+
+#btn-acciones{
+    display: flex;
+    width: 200px;
+}
+
+#btn-acciones td{
+    margin-right: 500px;
 }
