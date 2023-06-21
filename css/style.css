@@ -134,7 +134,7 @@ a, a:visited{
     background-size: cover;
     height: 250px;
     width: 700px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 
@@ -145,7 +145,7 @@ a, a:visited{
     background-size: cover;
     height: 300px;
     width: 700px;
-    border-radius: 20px;
+    /* border-radius: 20pxa; */
 }
 
 
