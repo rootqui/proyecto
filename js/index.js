@@ -18,7 +18,6 @@ const   d = document,
     btnCloseLogin = d.getElementById("btn-close-login"),
     btnLogin = d.getElementById("tab-btn-login");
     
-
 btnCloseLogin.addEventListener("click", (e)=>{
     if(e.target.matches("#btn-close-login")){
         tabLogin.style.opacity = 0;
@@ -45,6 +44,15 @@ btnLogin.addEventListener("click",function(e){
             frmLogin.style.zIndex = 1000;
             frmInicioSesion.style.zIndex = 1000;
             frmInicioSesion.innerHTML = frmLogin.innerHTML;
+
+            d.querySelector("#btn-frm-login").addEventListener("click",(e)=>{
+                if(e.target.matches("#btn-frm-login")){
+                    let u = d.getElementById("email-usuario");
+                    if (u.value == 'jdoe@mail.com'){
+                        window.location.href = "./pages/usuario.html";
+                    }
+                }
+            });
             e.preventDefault();
         }
 });
