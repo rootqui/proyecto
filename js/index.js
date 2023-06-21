@@ -22,6 +22,7 @@ btnCloseLogin.addEventListener("click", (e)=>{
     if(e.target.matches("#btn-close-login")){
         tabLogin.style.opacity = 0;
         tabLogin.style.visiblity = "hidden";
+        tab.style.zIndex = -1000;
         // e.preventDefault();
     }
 });
@@ -38,12 +39,13 @@ btnCloseReg.addEventListener("click", (e)=>{
 
 
 btnLogin.addEventListener("click",function(e){
-        if(e.target.matches("#tab-btn-login")){
-            tabLogin.style.opacity = 1;
-            frmInicioSesion.style.visiblity = "visible";
-            frmLogin.style.zIndex = 1000;
-            frmInicioSesion.style.zIndex = 1000;
-            frmInicioSesion.innerHTML = frmLogin.innerHTML;
+    if(e.target.matches("#tab-btn-login")){
+        tabLogin.style.opacity = 1;
+        frmInicioSesion.style.visiblity = "visible";
+        tab.style.zIndex = -1000;
+        frmLogin.style.zIndex = 1000;
+        frmInicioSesion.style.zIndex = 1000;
+        frmInicioSesion.innerHTML = frmLogin.innerHTML;
 
             d.querySelector("#btn-frm-login").addEventListener("click",(e)=>{
                 if(e.target.matches("#btn-frm-login")){
