@@ -49,10 +49,11 @@ btnLogin.addEventListener("click",function(e){
                 if(e.target.matches("#btn-frm-login")){
                     let u = d.getElementById("email-usuario");
                     if (u.value == 'jdoe@mail.com'){
-                        // window.location.href = "https://rootqui.github.io/proyecto/pages/usuario.html";
+                        // window.location.href = "./pages/usuario.html";
                         location.assign("https://rootqui.github.io/proyecto/pages/usuario.html");
                     }
                 }
+                e.preventDefault();
             });
             e.preventDefault();
         }
