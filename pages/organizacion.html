@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/organizacion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -18,58 +19,209 @@
             <h1 id="name-org">PASEA</h1>
         </div>
 
-        <nav class="info">       
-            <div id="perfil">Perfil</div>
-            <div id="programas">Programas</div>
-            <div id="certificiones">Certificaciones</div>
-            <div >Nombre organización</div>
+        <nav class="info"> 
+            <div>Lorem Ipsum</div>
         </nav>
     </header>
     
     <!-- al iniciar ya se tiene programas activos -->
-    
-    <!-- formulario para agregar nuevos programas -->
-    <div class="signup-form">
-        <div class="form">
-            <div class="close" onclick="signupToggle()">&times;</div>
-            <div class="text">
-                <h2>Agregar Nuevo Programa</h2>
+    <div class="body-org">
+        <div class="menu-org">
+            <div id="gestion">
+                <div id="btn-nuevo-programa">Nuevo</div>
             </div>
-            <form action="#">
-                <input type="text" placeholder="Nombre Programa">
-                <input type="text" placeholder="Descripcion">
-                <input type="number" placeholder="Cupos">
-                <input type="submit" value="Register">
-            </form>
+            
+            <div id="programas">
+                <div id="btn-programa">Programas</div>
+            </div>
+            <div id="voluntarios">
+                <div id="btn-voluntarios">Voluntarios</div>
+            </div>
+        </div>
+        
+        <div class="container-org-info" id="org-info">
+            <div class="form-programa">
+                <div class="form">
+                    <div class="header-form">
+                        <h2>Nuevo Programa</h2>
+                    </div>
+                    <form action="#">
+                        <div class="form-input" id="nombre-programa">
+                            <label>Nombre</label>
+                            <input type="text">
+                        </div>
+    
+                        <div class="form-input" id="descripcion">
+                            <label>Descripci&oacuten</label>
+                            <input type="text">
+                        </div>
+                        
+                        <div class="form-input" id="cupos">
+                            <label>Fecha</label>
+                            <input type="date">
+                        </div>    
+
+                        <div class="form-input" id="cupos">
+                            <label>Cupos</label>
+                            <input type="number">
+                        </div>
+                        <input type="submit" value="Publicar" id="btn-publicar">
+                    </form>
+                </div>   
+            </div>    
         </div>
     </div>
+
+    <template id="form-programa">
+        <div class="form-programa">
+            <div class="form">
+                <div class="header-form">
+                    <h2>Nuevo Programa</h2>
+                </div>
+                <form action="#">
+                    <div class="form-input" id="nombre-programa">
+                        <label>Nombre</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-input" id="descripcion">
+                        <label>Descripci&oacuten</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="form-input" id="cupos">
+                        <label>Fecha</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="form-input" id="cupos">
+                        <label>Cupos</label>
+                        <input type="number">
+                    </div>
+                    <input type="submit" value="Publicar" id="btn-publicar">
+                </form>
+            </div>   
+        </div>
+    </template>
+
+    <template id="gestion-voluntarios">
+        <div id="container-gestion-voluntarios">
+            <table>
+                <thead>
+                    <td>Nombre Completo</td>
+                    <td>Telefono</td>   
+                    <td>Programa</td>
+                    <td>Horas</td>
+                    <td>Acciones</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>+51 986 375 226</td>
+                        <td>Apoyo Escolar</td>
+                        <td>12</td>
+                        <td>
+                            <button>Ver Perfil</button>
+                            <button>Calificar</button>
+                            <button>Rechazar</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Nancy Davolio</td>
+                        <td>+51 986 235 456</td>
+                        <td>Enseñanza deportiva</td>
+                        <td>10</td>
+                        <td>
+                            <button>Ver Perfil</button>
+                            <button>Calificar</button>
+                            <button>Rechazar</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Andrew Fuller</td>
+                        <td>+51 962 515 556</td>
+                        <td>Adulto Mayor</td>
+                        <td>10</td>
+                        <td>
+                            <button>Ver Perfil</button>
+                            <button>Calificar</button>
+                            <button>Rechazar</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Michael Suyama</td>
+                        <td>+51 944 335 776</td>
+                        <td>Voluntariado Escolar</td>
+                        <td>10</td>
+                        <td>
+                            <button>Ver Perfil</button>
+                            <button>Calificar</button>
+                            <button>Rechazar</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Laura Callahan</td>
+                        <td>+51 977 277 457</td>
+                        <td>Apoyo Escolar</td>
+                        <td>10</td>
+                        <td>
+                            <button>Ver Perfil</button>
+                            <button>Calificar</button>
+                            <button>Rechazar</button>
+                        </td>
+                    </tr>
+
+
+                </tbody>                
+            </table>
+        </div>
+    </template>
     
-    <!-- formulario de gestion de voluntarios -->
-    <div class="container-gestion-voluntarios">
-        <table>
-            <thead>
-                <td>Nombre</td>
-                <td>Telefono</td>
-                <td>Programa</td>
-                <td>Horas Voluntariado</td>
-                <td>Acciones</td>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>AAAA</td>
-                    <td>BBBB</td>
-                    <td>CCCC</td>
-                    <td>1000</td>
-                    <td>
-                        <button>Ver Perfil</button>
-                        <button>Calificar</button>
-                        <button>Rechazar</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <template id="gestion-programas">
+        <div id="container-gestion-programas">
+            <table>
+                <thead>
+                    <td>Nombre Programa</td>
+                    <td>Descripci&oacuten</td>   
+                    <td>Cupos</td>
+                    <td>Fecha</td>
+                    <td>Acciones</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apoyo Escolar</td>
+                        <td>John Doe</td>
+                        <td>+51 986 375 226</td>
+                        <td>12</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Enseñanza deportiva</td>
+                        <td>Nancy Davolio</td>
+                        <td>+51 986 235 456</td>
+                        <td>10</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                            
+        
+                        </tbody>                
+                    </table>
+        
 
+        </div>
+    </template>
 
+    <script src="../js/organizacion.js"></script>
 </body>
 </html>

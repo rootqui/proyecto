@@ -1,0 +1,82 @@
+.body-org{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.menu-org{
+    margin: 50px 10px 2px 50px;
+    cursor: pointer;
+}
+.container-org-info{
+    /* width: 95vwk; */
+    /* cursor: pointer; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-org div,
+.container-org-info {
+    margin-bottom: 40px;
+}
+
+
+.header-form h2 {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+form input{
+    margin-bottom: 20px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input label{
+    margin-bottom: 20px;
+}
+
+#descripcion > input{
+    width: 500px;
+    height: 300px;
+}
+
+#nombre-programa > input{
+    width: 400px;
+    height: 25px;
+}
+
+#cupos > input{
+    width: 70px;
+    height: 20px;
+}
+
+#btn-publicar{
+    font-size: 16px;
+    border-radius: 0px;
+    background: #fff;
+    width: 90px;
+    height: 40px;
+}
+
+#container-gestion-voluntarios,
+#container-gestion-programas{
+    width: 500px;
+}
+
+table{
+    width: 700px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+td {
+    padding: 10px;
+}
+
+button{
+    padding: 4px;
+}

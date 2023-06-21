@@ -16,8 +16,10 @@ const   d = document,
     tabOrg = d.getElementById("tab-org"),
     btnCloseReg = d.getElementById("btn-close-reg"),
     btnCloseLogin = d.getElementById("btn-close-login"),
-    btnLogin = d.getElementById("tab-btn-login");
-    
+    btnLogin = d.getElementById("tab-btn-login");    
+
+
+// Boton cerrar form inicio de sesion
 btnCloseLogin.addEventListener("click", (e)=>{
     if(e.target.matches("#btn-close-login")){
         tabLogin.style.opacity = 0;
@@ -26,7 +28,8 @@ btnCloseLogin.addEventListener("click", (e)=>{
         // e.preventDefault();
     }
 });
-    
+
+// Boton cerrar form registro
 btnCloseReg.addEventListener("click", (e)=>{
     if(e.target.matches("#btn-close-reg")){
         tab.style.opacity = 0;
@@ -36,8 +39,7 @@ btnCloseReg.addEventListener("click", (e)=>{
     }
 });
 
-
-
+// Boton Iniciar sesion
 btnLogin.addEventListener("click",function(e){
     if(e.target.matches("#tab-btn-login")){
         tabLogin.style.opacity = 1;
