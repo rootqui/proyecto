@@ -56,6 +56,10 @@ btnLogin.addEventListener("click",function(e){
                         // window.location.href = "./pages/usuario.html";
                         location.assign("https://rootqui.github.io/proyecto/pages/usuario.html");
                     }
+
+                    if (u.value == 'lorem@mail.org'){
+                        location.assign("https://rootqui.github.io/proyecto/pages/organizacion.html");
+                    }
                 }
                 e.preventDefault();
             });
