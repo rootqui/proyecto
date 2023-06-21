@@ -153,5 +153,8 @@ input{
 
 .container-certificaciones{
     display: flex;
+}
 
+figure img{
+    object-fit: cover;
 }
