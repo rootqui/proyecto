@@ -158,3 +158,11 @@ input{
 figure img{
     object-fit: cover;
 }
+
+#perfil,
+#certificaciones,
+#programas,
+.nombre-usuario > *
+{
+    color: black;
+}

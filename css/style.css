@@ -13,7 +13,7 @@ html{
 
 body > * {
     font-family: 'Open Sans', sans-serif;
-    color:  #f2f3f4;
+    color:  white;
 }
 
 body{
@@ -26,22 +26,25 @@ body{
     "mision     mision"
     "vision     vision"
     "footer     footer";
-
-    background-color:   #505050;
 }
 
+.container-hero{
+    grid-area: container-hero;
+}
 
 a, a:visited{
+    /* background-color: #505050; */
+    color: black;
+    background-color: white;
     text-decoration: none;
-    color: #f2f3f4;
 }
 
 /* logo */
-.logo{
+/* .logo{
     height: 60px;
     width: 60px;
     filter: brightness(0) invert(1)
-}
+} */
 
 /* logo and organization name */
 .logo-org{
@@ -74,14 +77,8 @@ a, a:visited{
     margin: 20px;
 }
 
-/*Hero image*/
 .hero-image{
-    background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)) ,url("../img/hero.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     grid-area: hero-image;
-
 }
 
 .hero-text{
@@ -107,17 +104,21 @@ a, a:visited{
     justify-content: space-evenly;
     align-items: center;
     height: 200px;
+
 }
 
 .container-mision, .container-vision{
     margin: 10px;
     padding: 20px;
     width: 500px;
+    color: black;
 }
 
 .container-mision > p, .container-vision > p{
     margin: 5px;
     padding: 10px;
+    color: black;
+
 }
 
 .container-mision > p:first-child{
@@ -145,7 +146,6 @@ a, a:visited{
     background-size: cover;
     height: 300px;
     width: 700px;
-    /* border-radius: 20pxa; */
 }
 
 
@@ -188,7 +188,8 @@ a, a:visited{
     width: 35px;
     border-radius: 50%;
     border: none;
-    background-color: #f8f2f2;
+    /* background-color: #f8f2f2; */
+    color: #131314fb;
     /* background-color: #1d1c1c; */
 }
 
@@ -198,8 +199,24 @@ a, a:visited{
 }
 
 .box-search{
+    color: #131314fb;   
     display: flex;
     justify-content: center;
     gap: 5px;
 }
 
+
+#name-org img{
+    object-fit: cover;
+    height: 70px;
+    margin-left: 10px;
+}
+
+#tab-btn-login,
+#tab-btn-registro{
+    color: black;
+}
+
+#text-search{
+    border: solid black 2px;
+}

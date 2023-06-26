@@ -90,3 +90,9 @@ button{
 #btn-acciones td{
     margin-right: 500px;
 }
+
+.body-org > *,
+#n-org{
+    color: black;
+}
+

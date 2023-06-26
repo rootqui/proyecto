@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasea Arequipa</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sliderbanner.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -16,8 +17,9 @@
    
     <header class="header">
         <div class="logo-org">
-            <img src="./img/logo.png" alt="UAO" class="logo">
-            <h1 id="name-org">PASEA</h1>
+            <div id="name-org">
+                <img src="./img/proyectoP.png">
+            </div>
         </div>
         <nav class="info">
             <a href="#section-mision">Misi&oacuten</a>
@@ -29,7 +31,7 @@
         </nav>
     </header>
 
-    <div class="hero-image">
+    <div class="hero-image" id="hero-banner">
         <div class="hero-text">
             <p>S&eacute t&uacute el cambio que quieres ver en el mundo.</p>
         </div>
@@ -67,7 +69,6 @@
     <!-- form login -->
     <div class="login-form">
         <div class="tab-form-login">
-            <!-- <div class="btn-close-login">&times;</div> -->
             <div class="btn-close" id="btn-close-login">&times;</div>
             <div class="tab-header-login">
                 <div>Iniciar Sesion</div>
@@ -194,7 +195,6 @@
             <button>Register</button>
         </div>
     </template>
-
 
     <script src="./js/index.js"></script>
 </body>
