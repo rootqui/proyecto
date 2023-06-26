@@ -19,13 +19,13 @@ body > * {
 body{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows:90px 800px 300px 300px 10px;
+    grid-template-rows:90px 100vh;
     grid-template-areas: 
     "header     header"
-    "hero-image hero-image"
-    "mision     mision"
-    "vision     vision"
-    "footer     footer";
+    "hero-image hero-image";
+    /* "mision     mision" */
+    /* "vision     vision" */
+    /* "footer     footer"; */
 }
 
 .container-hero{
@@ -35,7 +35,8 @@ body{
 a, a:visited{
     /* background-color: #505050; */
     color: black;
-    background-color: white;
+    /* color: #ffee58; */
+    /* background-color: white; */
     text-decoration: none;
 }
 
@@ -61,7 +62,21 @@ a, a:visited{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffee58;
     grid-area: header;
+}
+
+.btn-header{
+    padding: 20px;
+    font-weight: 1000;
+}
+
+.btn-header:hover,
+#tab-btn-login:hover,
+#tab-btn-registro:hover{
+    /* border: solid black; */
+    background-color: black;
+    color: white;
 }
 
 #name-org{
@@ -81,22 +96,23 @@ a, a:visited{
     grid-area: hero-image;
 }
 
-.hero-text{
+#hero-text{
     text-align: center;
     font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
+    width: 20px;
+    top: 40vh;
+    left: 50vw;
     transform: translate(-50%,-50%);
-    
+    font-size: 50px;
 }
 
 .hero-text > *{
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .hero-text > p {
-    font-size: 50px;
+    /* font-size: 50px; */
 }
 
 .mision, .vision{
@@ -108,15 +124,15 @@ a, a:visited{
 }
 
 .container-mision, .container-vision{
-    margin: 10px;
-    padding: 20px;
+    margin: 20px;
+    /* padding: 40px; */
     width: 500px;
     color: black;
 }
 
 .container-mision > p, .container-vision > p{
     margin: 5px;
-    padding: 10px;
+    padding: 20px;
     color: black;
 
 }
@@ -128,6 +144,7 @@ a, a:visited{
 .container-vision > p:first-child{
     font-size: 50px;
 }
+
 .img-mision{
     background-image: url("../img/mision.jpg");
     background-position: center;
@@ -161,19 +178,27 @@ a, a:visited{
 
 
 .footer{
-    margin: 50px;
+    margin: 5px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     height: auto;
-    padding: 5px;
+    padding: 15px;
     grid-area: footer;
 }
 
 .footer > * {
-    padding: 20px;
+    margin: 40px;
+    padding: 15px;
+    align-self: center;
 }
 
+.footer > div:nth-child(1),
+.footer > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: black;
+}
 
 .box-search input{
     padding: 10px;

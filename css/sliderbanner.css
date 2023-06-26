@@ -1,16 +1,17 @@
 /* transition: opacity 300ms ease-in-out 0ms; */
 #hero-banner{
-    position: relative;
+    /* position: relative; */
     background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url("../img/hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: 15s infinite slidein;
+    animation: 30s infinite slidein;
     animation-timing-function: ease-in-out;
 }
 @keyframes slidein {
     0%{
         background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url("../img/hero2.jpeg");
+        
     }
     20%{
         background-image: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)), url("../img/hero4.jpeg");
@@ -27,3 +28,35 @@
     }
     
 }
+
+#msg-hero, #hero-text{
+    
+    height: fit-content;
+    width: fit-content;
+}
+
+#hero-text{
+    letter-spacing: 5px;
+    border-right: 5px solid;
+    padding: 0px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:  typing 2s steps(18),
+                cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor{
+
+    50%{
+        border-color: transparent;
+    }
+}
+
+@keyframes typing{
+
+    from{
+        width: 0%;
+    }
+}
+

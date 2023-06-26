@@ -101,5 +101,39 @@ tabOrg.addEventListener("click",function(e){
     }
 });
 
+let i = 0;
+let msg = d.getElementById("hero-text");
 
+// d.addEventListener("DOMContentLoaded", (e)=>{
+    
+//     const listMsg = ["La falta de amor es la mayor pobreza del ser humano", "Si juzgas a la gente, no tienes tiempo para amarla", "Sé tú el cambio que quieres ver en el mundo."];
+                    
+//     (function fmsg (){
+//         msg.textContent = "";
+//         if (i > listMsg.length){
+//             i = 1;
+//         }
+        
+//         msg.textContent = listMsg[i]
+//         i++;
+//     }) ();
 
+//     // fmsg();
+// });
+
+// const listMsg = ["La falta de amor es la mayor pobreza del ser humano", "Si juzgas a la gente, no tienes tiempo para amarla", "Sé tú el cambio que quieres ver en el mundo."];
+
+// (function fmsg (){
+    
+//     msg.textContent = "";
+//     if (i > listMsg.length){
+//         i = 1;
+//     }
+//     let txt = listMsg[i];
+//     msg.textContent =  txt
+//     msg.style.fontSize = "40px";
+//     msg.style.animation = "typing 4s steps(18) infinite, cursor .4s step-end infinite alternate";
+//     // setInterval("",100000);
+//     i++;
+//     setInterval(fmsg, 4000);
+// }) ();
