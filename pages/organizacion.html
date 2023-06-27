@@ -15,22 +15,19 @@
 <body>
     <header class="header">
         <div class="logo-org">
-            <!-- <img src="../img/logo.png" alt="logo-pasea" class="logo">
-            <h1 id="name-org">PASEA</h1> -->
             <div id="name-org">
                 <img src="../img/proyectoP.png">
             </div>
         </div>
 
-        <nav class="info"> 
-            <div>
-                <a href="../index.html">Inicio</a>
-            </div>
-            <div id="n-org">Lorem Ipsum</div>
+        <nav class="info">
+            <a class="btn-header" href="../index.html">Inicio</a>
+            <a class="btn-header" href="apoyo.html">Apoyo</a>
+            <div class="btn-header" id="btn-usuario">Lorem</div>
         </nav>
     </header>
     
-    <!-- al iniciar ya se tiene programas activos -->
+    
     <div class="body-org">
         <div class="menu-org">
             <div id="gestion">
@@ -60,7 +57,7 @@
     
                         <div class="form-input" id="descripcion">
                             <label>Descripci&oacuten</label>
-                            <input type="text">
+                            <textarea name="descripcion" id="txta-descripcion" cols="30" rows="10"></textarea>
                         </div>
                         
                         <div class="form-input" id="cupos">
@@ -93,7 +90,7 @@
 
                     <div class="form-input" id="descripcion">
                         <label>Descripci&oacuten</label>
-                        <input type="text">
+                        <textarea name="descripcion" id="txta-descripcion" cols="30" rows="10"></textarea>
                     </div>
                     
                     <div class="form-input" id="cupos">
@@ -113,7 +110,7 @@
 
     <template id="gestion-voluntarios">
         <div id="container-gestion-voluntarios">
-            <div class="header">
+            <div class="header-form">
                 <h2>Gestion Voluntarios</h2>
             </div>
             <table>
@@ -122,7 +119,7 @@
                     <td>Telefono</td>   
                     <td>Programa</td>
                     <td>Horas</td>
-                    <td>Acciones</td>
+                    <td id="td-acciones-voluntario">Acciones</td>
                 </thead>
                 <tbody>
                     <tr>
@@ -131,9 +128,9 @@
                         <td>Apoyo Escolar</td>
                         <td>12</td>
                         <td>
-                            <button>Ver Perfil</button>
-                            <button>Calificar</button>
-                            <button>Rechazar</button>
+                            <a class="btn-ver-perfil" href="./usuario.html" id="user-test">Ver Perfil</a>
+                            <button class="btn-calificar">Calificar</button>
+                            <button class="btn-rechazar">Rechazar</button>
                         </td>
                     </tr>
                     
@@ -143,9 +140,9 @@
                         <td>Enseñanza deportiva</td>
                         <td>10</td>
                         <td>
-                            <button>Ver Perfil</button>
-                            <button>Calificar</button>
-                            <button>Rechazar</button>
+                            <button class="btn-ver-perfil">Ver Perfil</button>
+                            <button class="btn-calificar">Calificar</button>
+                            <button class="btn-rechazar">Rechazar</button>
                         </td>
                     </tr>
                     
@@ -155,9 +152,9 @@
                         <td>Adulto Mayor</td>
                         <td>10</td>
                         <td>
-                            <button>Ver Perfil</button>
-                            <button>Calificar</button>
-                            <button>Rechazar</button>
+                            <button class="btn-ver-perfil">Ver Perfil</button>
+                            <button class="btn-calificar">Calificar</button>
+                            <button class="btn-rechazar">Rechazar</button>
                         </td>
                     </tr>
                     
@@ -167,9 +164,9 @@
                         <td>Voluntariado Escolar</td>
                         <td>10</td>
                         <td>
-                            <button>Ver Perfil</button>
-                            <button>Calificar</button>
-                            <button>Rechazar</button>
+                            <button class="btn-ver-perfil">Ver Perfil</button>
+                            <button class="btn-calificar">Calificar</button>
+                            <button class="btn-rechazar">Rechazar</button>
                         </td>
                     </tr>
                     
@@ -179,9 +176,9 @@
                         <td>Apoyo Escolar</td>
                         <td>10</td>
                         <td>
-                            <button>Ver Perfil</button>
-                            <button>Calificar</button>
-                            <button>Rechazar</button>
+                            <button class="btn-ver-perfil">Ver Perfil</button>
+                            <button class="btn-calificar">Calificar</button>
+                            <button class="btn-rechazar">Rechazar</button>
                         </td>
                     </tr>
                     
@@ -193,7 +190,7 @@
     
     <template id="gestion-programas">
         <div id="container-gestion-programas">
-            <div class="header">
+            <div class="header-form">
                 <h2>Gestion Programas</h2>
             </div>
             <table>
@@ -202,7 +199,7 @@
                     <td>Descripci&oacuten</td>   
                     <td>Cupos</td>
                     <td>Fecha</td>
-                    <td>Acciones</td>
+                    <td id="td-acciones-programa">Acciones</td>
                 </thead>
                 <tbody>
                     <tr>
@@ -211,8 +208,8 @@
                         <td>16</td>
                         <td>12/06/2023</td>
                         <td>
-                            <button>Editar</button>
-                            <button>Eliminar</button>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
                         </td>
                     </tr>
                     
@@ -222,11 +219,10 @@
                         <td>10</td>
                         <td>12/05/2023</td>
                         <td>
-                            <button>Editar</button>
-                            <button>Eliminar</button>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
                         </td>
                     </tr>
-                            
         
                 </tbody>                
             </table>

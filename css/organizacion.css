@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    margin-top: 24px;
 }
 
 .menu-org{
@@ -62,13 +63,14 @@ form input{
     height: 40px;
 }
 
+
 #container-gestion-voluntarios,
 #container-gestion-programas{
     width: 500px;
 }
 
 table{
-    width: 700px;
+    width: 70vw;
     margin-top: 50px;
     margin-left: -9px;
 }
@@ -96,3 +98,101 @@ button{
     color: black;
 }
 
+
+#td-acciones-programa,
+#td-acciones-voluntario{
+    width: 234px;
+}
+
+#txta-descripcion{
+    resize: none;
+    margin-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+#btn-nuevo-programa{
+    width: fit-content;
+}
+
+#btn-nuevo-programa,
+#btn-programa,
+#btn-voluntarios{
+    padding-bottom: 10px;
+}
+
+
+#btn-nuevo-programa:hover,
+#btn-programa:hover,
+#btn-voluntarios:hover{
+    border-bottom: black solid 3px;
+}
+
+.header-form{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+td button{
+
+    font-size: 14px;
+    background: #fff;
+    width: 80px;
+    height: 40px;
+}
+
+#td-acciones-voluntario{
+    width: 340px;
+}
+
+thead tr{
+    font-weight: 900;
+}
+
+thead{
+    border-bottom: 3px solid black;
+}
+
+.btn-editar:hover,
+.btn-ver-perfil:hover,
+#user-test:hover{
+    background-color: #a2b2f4 ;
+    color: #fff;
+    border: 0;
+}
+
+.btn-calificar:hover{
+    background-color: #9edc95  ;
+    color: #fff;
+    border: 0;
+}
+
+.btn-eliminar:hover,
+.btn-rechazar:hover{
+    background-color:  #ff7e7e ;
+    color: #fff;
+    box-shadow: none;
+    border: 0;
+}
+
+.btn-editar,
+.btn-ver-perfil,
+.btn-calificar,
+.btn-eliminar,
+.btn-rechazar{
+    background-color:  #fdfdfd ;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+#user-test{
+
+    padding: 8px;
+    font-size: 14px;
+    background: #fff;
+    width: 80px;
+    height: 40px;
+    border: 1px solid black;
+    font-weight: 900;
+}

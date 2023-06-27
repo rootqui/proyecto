@@ -15,42 +15,31 @@
 <body>
     <header class="header">
         <div class="logo-org">
-            <!-- <img src="../img/logo.png" alt="logo-pasea" class="logo">
-            <h1 id="name-org">PASEA</h1> -->
             <div id="name-org">
                 <img src="../img/proyectoP.png">
             </div>
         </div>
         <nav class="info">
-            <!-- <div>
-                <a href="donaciones.html">Donaciones</a>
-            </div> -->
-            <div>
-                <a href="../index.html">Inicio</a>
-            </div>
-            <div>
-                <a href="apoyo.html">Apoyo</a>
-            </div>
-
-            <div>John Doe</div>
+            <a class="btn-header" href="../index.html">Inicio</a>
+            <a class="btn-header" href="apoyo.html">Apoyo</a>
+            <div class="btn-header" id="btn-usuario">John Doe</div>
         </nav>
     </header>
 
     <div class="body-usuario">
         <div class="menu-usuario">
             <div id="perfil">
-                <a href="#perfil">Perfil</a>
+                <a href="#">Perfil</a>
             </div>
             <div id="programas">
-                <a href="#programas">Programas</a>
+                <a href="#">Programas</a>
             </div>
-            <div id="certificiones">
-                <a href="#certificaciones">Certificaciones</a>
+            <div id="certificaciones">
+                <a href="#">Certificaciones</a>
             </div>
         </div>
         
-        <div class="container-usuario-info">
-  
+        <div class="container-usuario-info" id="usuario-info">
             <div class="header-usuario" id="perfil">
                 <div>
                     Perfil
@@ -58,7 +47,6 @@
             </div>
 
             <div class="container-detalle-perfil">
-
                 <div class="info-perfil">
                     <div class="container-foto-perfil">
                         <img src="../img/userlogo.png" alt="usuario">
@@ -72,81 +60,114 @@
 
                 <div class="experiencia">
                     <div class="container-horas">
-                        <!-- <img src="../img/reloj2.png" alt="reloj"> -->
                         <div id="exp-horas">12 Hrs</div>
                         <div>Acumuladas</div>
                     </div>
     
                     <div class="container-reconocimiento">
-                        <!-- <img src="../img/medalla.png" alt="medalla"> -->
                         <div id="nro-reconocimientos">2</div>
                         <div>Reconocimientos</div>
                     </div>
                 </div>
-
             </div>
 
-            <div class="header-programas" id="programas">
-                <div>
-                    Programas
-                </div> 
-            </div>
-
-            <div class="container-programas">
-                <div class="container">
-                    <div class="card">
-                        <figure>
-                            <img src="../img/usuariovoltuntariadodeporte.jpeg" alt="">
-                        </figure>
-                        <div class="contenido">
-                            <h3>Vountariado Deportivo</h3>
-                            <p>Entrena a niños desfavorecidos para mantenerlos activos y mejorar sus habilidades en diferentes deportes</p>
-                            <p>Estado: Finalizado</p>
+            <!-- Template de Perfil -->
+            <template id="template-perfil">
+                <div class="header-usuario" id="perfil">
+                    <div>
+                        Perfil
+                    </div> 
+                </div>
+                <div class="container-detalle-perfil">
+                    <div class="info-perfil">
+                        <div class="container-foto-perfil">
+                            <img src="../img/userlogo.png" alt="usuario">
+                        </div>
+                        <div class="nombre-usuario">
+                            <p>Jon Doe</p>
+                            <p>Cambiar contraseña</p>
+                            <p>Editar</p>
                         </div>
                     </div>
-                </div>
-                
-                <div class="container">
-                    <div class="card">
-                        <figure>
-                            <img src="../img/usuariovoluntariadoescolar.jpg" alt="">
-                        </figure>
-                        <div class="contenido">
-                            <h3>Voluntariado Educaci&oacuten</h3>
-                            <p>Enseña principalmente inglés y matemáticas a estudiantes de entre 6 y 15 años.</p>
-                            <p>Estado: Finalizado</p>
+                    <div class="experiencia">
+                        <div class="container-horas">
+                            <div id="exp-horas">12 Hrs</div>
+                            <div>Acumuladas</div>
+                        </div>
+                        <div class="container-reconocimiento">
+                            <div id="nro-reconocimientos">2</div>
+                            <div>Reconocimientos</div>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="header-certificaciones" id="certificaciones">
-                <div>
-                    Certificaciones
-                </div> 
-            </div>
-            
-            <div class="container-certificaciones">                    
-                <div id="card-cert">
-                    <div class="img-cert">
-                        <img src="../img/certificado2.jpg" alt="certificado">
-                    </div>    
-                    <div class="title-program">
-                        <h3>Apoyo escolar</h3>
+                </div>    
+            </template>
+
+            <!-- Template de Programas -->
+            <template id="template-programas">
+                <div class="header-programas" id="programas">
+                    <div>
+                        Programas
+                    </div> 
+                </div>    
+                <div class="container-programas">
+                    <div class="container">
+                        <div class="card">
+                            <figure>
+                                <img src="../img/usuariovoltuntariadodeporte.jpeg" alt="">
+                            </figure>
+                            <div class="contenido">
+                                <h3>Vountariado Deportivo</h3>
+                                <p>Entrena a niños desfavorecidos para mantenerlos activos y mejorar sus habilidades en diferentes deportes</p>
+                                <p>Estado: Finalizado</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
                     
-                <div id="card-cert">
-                    <div class="img-cert">
-                        <img src="../img/certificado1.jpg" alt="certificado">
+                    <div class="container">
+                        <div class="card">
+                            <figure>
+                                <img src="../img/usuariovoluntariadoescolar.jpg" alt="">
+                            </figure>
+                            <div class="contenido">
+                                <h3>Voluntariado Educaci&oacuten</h3>
+                                <p>Enseña principalmente inglés y matemáticas a estudiantes de entre 6 y 15 años.</p>
+                                <p>Estado: Finalizado</p>
+                            </div>
+                        </div>
                     </div>
+                </div>    
+            </template>
 
-                    <div class="title-program">
-                        <h3>Enseñar deportes</h3>
+            <!-- Template de Certificaciones -->
+            <template id="template-certificaciones">
+                <div class="header-certificaciones" id="certificaciones">
+                    <div>
+                        Certificaciones
+                    </div> 
+                </div>
+                <div class="container-certificaciones">                    
+                    <div id="card-cert">
+                        <div class="img-cert">
+                            <img src="../img/certificado2.jpg" alt="certificado">
+                        </div>    
+                        <div class="title-program">
+                            <h3>Apoyo escolar</h3>
+                        </div>
+                    </div>
+                        
+                    <div id="card-cert">
+                        <div class="img-cert">
+                            <img src="../img/certificado1.jpg" alt="certificado">
+                        </div>
+                        <div class="title-program">
+                            <h3>Enseñar deportes</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </template>
+            
         </div>
     </div>
+    <script src="../js/usuario.js"></script>
 </body>
 </html>

@@ -23,9 +23,6 @@ body{
     grid-template-areas: 
     "header     header"
     "hero-image hero-image";
-    /* "mision     mision" */
-    /* "vision     vision" */
-    /* "footer     footer"; */
 }
 
 .container-hero{
@@ -33,20 +30,11 @@ body{
 }
 
 a, a:visited{
-    /* background-color: #505050; */
     color: black;
-    /* color: #ffee58; */
-    /* background-color: white; */
     text-decoration: none;
 }
 
 /* logo */
-/* .logo{
-    height: 60px;
-    width: 60px;
-    filter: brightness(0) invert(1)
-} */
-
 /* logo and organization name */
 .logo-org{
     display: flex;
@@ -62,7 +50,7 @@ a, a:visited{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffee58;
+    background-color: #f0db4f;
     grid-area: header;
 }
 
@@ -71,17 +59,40 @@ a, a:visited{
     font-weight: 1000;
 }
 
-.btn-header:hover,
+/* .btn-header:hover,
 #tab-btn-login:hover,
 #tab-btn-registro:hover{
-    /* border: solid black; */
     background-color: black;
     color: white;
+} */
+
+
+
+.btn-header{
+    padding: 20px;
+    font-weight: 1000;
 }
 
-#name-org{
+/* .btn-header:hover,
+#tab-btn-login:hover,
+#tab-btn-registro:hover{
+    background-color: black;
+    color: white;
+}#name-org{
+    font-size: 50px;
+} */
+
+.btn-header:hover,
+#tab-btn-login:hover,
+#tab-btn-registro:hover,
+#btn-inicio:hover
+#btn-red:hover{
+    background-color: black;
+    color: white;
+}#name-org{
     font-size: 50px;
 }
+
 
 .info{
     display: flex;
@@ -89,7 +100,7 @@ a, a:visited{
     cursor: pointer;
 }
 .info a, .info div{
-    margin: 20px;
+    margin: 0px;
 }
 
 .hero-image{
@@ -107,13 +118,6 @@ a, a:visited{
     font-size: 50px;
 }
 
-.hero-text > *{
-    /* margin: 20px; */
-}
-
-.hero-text > p {
-    /* font-size: 50px; */
-}
 
 .mision, .vision{
     display: flex;
@@ -240,6 +244,10 @@ a, a:visited{
 #tab-btn-login,
 #tab-btn-registro{
     color: black;
+}
+
+#tab-btn-registro{
+    margin-right: 20px;
 }
 
 #text-search{
