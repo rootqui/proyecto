@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans" sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+
+.vision-seccion{
+    background: url(../img/vision01.jpeg) no-repeat left;
+}
+
+.mision-seccion{
+    background: url(../img/mision01.jpeg) no-repeat left;
+}
+
+.mision-vision-seccion{
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+    
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 70px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: 40px;
+    margin-bottom: 40px;
+}
+
+
+.valores{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .mision-vision-seccion{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .mision-vision-seccion{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+
