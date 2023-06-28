@@ -94,8 +94,6 @@ input{
     height: 100px;
     display: flex;
     flex-direction: column;
-
-    /* align-self: flex-start; */
     justify-content: center;
 }
 
@@ -155,9 +153,6 @@ input{
     color: #6a6a6a;
 }
 
-.container-certificaciones{
-    display: flex;
-}
 
 figure img{
     object-fit: cover;
@@ -170,3 +165,10 @@ figure img{
 {
     color: black;
 }
+
+.container-certificaciones{
+    display: flex;
+}
+
+
+

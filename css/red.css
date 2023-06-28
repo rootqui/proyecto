@@ -59,10 +59,6 @@ a, a:visited{
     justify-content: space-around;
     cursor: pointer;
 }
-.info a, .info div{
-    margin: 20px;
-}
-
 
 
 .footer{
@@ -273,11 +269,11 @@ a, a:visited{
 
 
 /* Cards organizaciones */
-.organizacion-card{
+/* .organizacion-card{
     font-size: 16px;
     margin: 10px;
     padding: 10px;
-}
+} */
 
 .organizacion-titulo{
     font-size: 24px;
@@ -293,4 +289,135 @@ a, a:visited{
 .organizacion-titulo,
 .organizacion-info{
     color: black;
+}
+
+/* card */
+.container-organizacion{
+    width: auto;
+}
+
+.container-organizacion{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;    
+}
+
+.card{
+    width: 400px;
+    background: #fff;
+    box-shadow:  0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    /* border-radius: 10px; */
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+    /* width: 240px; */
+    height: 200px;
+}
+
+.contenido > *{
+    word-wrap: break-word;
+}
+
+.card .contenido{
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido h3{
+    color: #6a6a6a;
+}
+
+
+figure img{
+    object-fit: cover;
+}
+
+
+.container{
+    margin: 20px;
+}
+
+.container-organizacion{ 
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+/* header */
+.header{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0db4f;
+    grid-area: header;
+}
+
+.info{
+    cursor: pointer;
+}
+
+.info a, .info div{
+
+    padding: 20px;
+}
+
+.btn-header{
+    padding: 20px;
+    font-weight: 1000;
+}
+
+.info > *:hover{
+    background-color: black;
+    color: white;
+}
+
+#name-org{
+    font-size: 50px;
+}
+
+.logo-org{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;   
+}
+
+#name-org img{
+    object-fit: cover;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.info{
+    margin-right: 20px;
+}
+
+.btn-close,
+.tab-header > *,
+.form-input > label,
+.form-input-org div > label{
+    color: #fff;
 }
